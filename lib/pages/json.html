@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<!-- Required meta tags  -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS  -->
+<link rel="stylesheet" href="static/css/bootstrap.min.css">
+
+<!-- Custom Css  -->
+<link rel="stylesheet" href="static/css/style.css" type="text/css" />
+
+<!-- Ionic icons  -->
+<link href="static/css/ionicons.min.css" rel="stylesheet">
+
+
+<script type="text/javascript" src="static/js/jquery.js"></script>
+<script type="text/javascript" src="static/js/json.js"></script>
+
+<title>Home</title>
+
+</head>
+
+<body onload="">
+
+	<!-- N A V B A R  -->
+	<nav
+		class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
+		<div class="collapse navbar-collapse" id="navbarNavDropdown"
+			style="height: 70px;">
+			<div class="container">
+				<div id="logo"></div>
+				<h3 onclick="window.open('index.html')"
+					style="color: #0095F7; position: relative; font-size: 32px; top: 17px;">测试小工具</h3>
+				<small style="position: relative; top: -5px; color: #8DA2B5;">Antoy实用小工具（Powered By Antoy）</small>
+				<button id="return" onclick="location.href='index.html'" class="btn btn-buy"
+					style="position: fixed; left: 90%; top: -5px;">返 回</button>
+			</div>
+			<div id="show" style="display:none;"></div>
+		</div>
+	</nav>
+	<!-- E N D N A V B A R  -->
+
+
+	<!-- P R I C I N G  -->
+	<section id="testimonials" style="padding-top: 100px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pricing-box" style="height: 425px;">
+						<span><img src="static/img/json.png"
+							style="position: relative; float: left; height: 62px; top: 6px;"></img>
+						<h4>jsonpath</h4></span> <small>框架提供获取jsonpath功能
+						</small>
+						<div class="divider-light"></div>
+						<ul>
+							<li id="runmsg"
+								style="width: 100%; float: left; line-height: 44px;"><i
+								class="icon ion-md-checkmark-circle-outline">输入标准的json字符串：</i> 
+								<i class="icon ion-md-checkmark-circle-outline"
+								style="position: relative; float: right; width: 10%;">
+									<button id="runbutton" onclick="Analysis();"
+										style="line-height: 21px; left: 10px; position: relative; background-color: rgba(148, 190, 234, 0.5); color: blue; border: none;">解析</button>
+								</i>
+								</li>
+							<li
+								style="width: 100%; float: left;">
+								<textarea id="jsontext" style="width:100%;height:200px;">json</textarea> 
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--  E N D P R I C I N G  -->
+
+	<!-- P R I C I N G  -->
+	<section id="testimonials" style="padding-top: 0px;">
+		<div class="container" id="all">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pricing-box">
+						<span><h4>json结构</h4><input id="jsonpath" value="jsonpath" style="float:right;width:35%"></input></span> <small>点击元素的键即可生成jsonpath</small>
+						<br><br><div class="case-group">
+		                    <div id="myjson" class="group-title">{
+		              		}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		</div>
+		&nbsp
+	</section>
+	<!--  E N D P R I C I N G  -->
+</body>
+</html>
